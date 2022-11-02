@@ -1,0 +1,13 @@
+<div class="form" [formGroup]="form">
+  <div>
+    帳號：<input type="text" formControlName="id" />
+    <ng-container *ngIf="id.touched">
+      <span *ngIf="id.hasError('required')">帳號為必填欄位</span>
+    </ng-container>
+  </div>
+  <div>密碼：<input type="password" formControlName="password" /></div>
+  <div class="button">
+    <button type="button" (click)="form.reset()">重設</button>
+    <button type="button" (click)="onLogin()">登入</button>
+  </div>
+</div>

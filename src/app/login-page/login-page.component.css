@@ -1,0 +1,23 @@
+form {
+  padding-left: 20px;
+}
+
+div {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+input.ng-invalid.ng-touched {
+  border: solid 1px red;
+}
+
+span {
+  color: red;
+  margin-left: 15px;
+}
+
+div.button {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
